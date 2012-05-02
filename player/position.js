@@ -1,11 +1,11 @@
 steal('player/popcorn',
-	'jquery/controller',
+	'can/control',
 	'jquery/dom/dimensions',
 	'jquery/event/resize',
 	'jquery/event/drag/limit',
 
 	function() {
-		$.Controller('PlayerPosition', {
+		can.Control('PlayerPosition', {
 			init : function(){
 				this.moving = $("<div>").css({
 					position: 'absolute',

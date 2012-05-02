@@ -1,8 +1,8 @@
 steal('player/popcorn',
-	'jquery/controller',
+	'can/control',
 
 	function() {
-		$.Controller('Play', {
+		can.Control('Play', {
 			init : function(){
 				if( this.options.video.video.paused ) {
 					this.element.text("play")
